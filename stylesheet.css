@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	line-height: 100%;
+	font-size: 100%;
+}
+
+body{
+	background-color: rgb(44, 62, 80);
+
+}
+
+#container p{
+	color: rgb(236, 240, 241);
+	margin-top: 40vh;
+	min-height: 200px;
+}
+
+.first{
+	font-family: 'Raleway', sans-serif;
+}
+
+.second{
+	font-family: 'Pacifico', cursive;
+	font-size: 20px;
+}
+
+p {
+	text-align: center;
+}
+
+#footer{
+	color: rgb(149, 165, 166);
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	position: absolute;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	padding: 1rem;
+}
+
+a{
+	color: rgb(149, 165, 166);
+}
+
+#logo{
+	height: 32px;
+	width: 32px;
+	right: 0;
+  	top: 0;
+  	left: 0;
+  	padding: 24px;
+}

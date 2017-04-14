@@ -1,0 +1,67 @@
+<!DOCTYPE html5>
+<html>
+<header>
+	<title>Ari Birnbaum | WIP</title>
+    <!--The stylesheet link-->
+	<link href="stylesheet.css" type="text/css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+    <!--Font links-->
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway" rel="stylesheet">
+
+    <!--jQuery lib importer linl-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script>
+        /*jQuery script for randomized text output upon refresh*/
+        $(document).ready(function(){
+            /*Returns the random word*/
+            function greet(word){
+  				return $(".second").text(word); 
+			}
+            
+            /*This function generates a random number to pick the word from the index below*/
+			function getRandom(arr){
+  				var rand = Math.random();
+  				return arr[Math.floor(rand *arr.length)];
+			}
+
+            /*Index of words that can be picked*/
+			var words = [
+        		" neat", 
+        		" lit", 
+        		" dank",
+        		" cool af",
+        		" top notch",
+        		" neato",
+        		" gucci",
+        		" freakin great",
+        		" pretty good",
+                " delicioso",
+                "rad"
+    		],
+
+            /*Declares "randomWords" as the random word picked*/
+    		randomWords = getRandom(words);
+
+            /*Feeds "randomWords" variable back to the greet function to then be outputed into the html span tag (second)*/
+  			greet(randomWords);
+        });
+    </script>
+</header>
+<body>
+    <!--Main div container-->
+	<div id="container">
+        <!--Logo and link to website homepage-->
+		<a href="http://ceiphr.com/"><img id="logo" src="img/ceiphr.png" alt="ceiphr"/></a>
+
+        <!--Centered text with span to avoid breaks. The "second" class is what the javascript alters upon refresh of the page-->
+		<p class="first text-center">Soon to be the home of something <span class="second"></span>.</p>
+	</div>
+
+    <!--The footer which contains the social media links seen at the bottom of the page-->
+	<div id="footer">
+		<p><a href="https://www.instagram.com/ceiphr/" target="_blank">Instagram</a><span> // </span><a href="https://twitter.com/ceiphr" target="_blank">Twitter</a><span> // </span><a href="https://www.facebook.com/ceiphr/" target="_blank">Facebook</a><span> // </span><a href="https://github.com/ceiphr" target="_blank">Github</a></p>
+	</div>
+</body>
+</html>
